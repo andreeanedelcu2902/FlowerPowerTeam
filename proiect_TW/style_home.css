@@ -104,6 +104,12 @@
     list-style-type: disc; /* Setează stilul listei după necesitate */
 }
 
+.actor-image {
+  width: 200px; /* Ajustează dimensiunea imaginii după necesitate */
+  margin-right: 20px; /* Ajustează spațiul dintre imagine și text după necesitate */
+}
+
+
 .scala-titlu{
     font-size: 40px; /* Ajustează mărimea fontului după necesitate */
     font-weight: bold;

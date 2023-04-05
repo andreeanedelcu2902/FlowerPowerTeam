@@ -1,6 +1,12 @@
 *{
     background-color: rgb(111, 114, 114);
 }
+
+body {
+  overflow-x: hidden;
+}
+
+
 .top {
     
     display: flex;
@@ -87,6 +93,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+
   }
   
   .gallery-button a {
@@ -103,7 +110,31 @@
   .gallery-button a:hover {
     background-color: #888988;
   }
+  .gallery-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+  .gallery-button3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+
+  .gallery-button4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
   
 
+
+  
   
   
