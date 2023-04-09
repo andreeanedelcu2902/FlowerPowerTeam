@@ -1,0 +1,173 @@
+*{
+    background-color: rgb(163, 156, 194);
+
+}
+.top {
+    
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(140, 132, 148, 0.4),rgba(243, 232, 194, 0.4));
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -10px;
+    box-shadow: 0px 2px 5px rgba(239, 234, 234, 0.1); 
+    font-family: "Lucida Handwriting", cursive;
+    font-weight: bold;
+    color: rgb(251, 248, 248);
+}
+.imga{
+
+  color: rgb(251, 248, 248);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+.header{
+  color: rgb(251, 248, 248);
+  font-family: "Lucida Console", monospace;
+  text-shadow: 2px 2px 0px #664685, 4px 4px 0px rgb(50, 8, 63);
+
+}
+  
+.menu {
+    
+  list-style-type: none;
+  margin: 0 70px 0 100px;
+  padding: 0;
+  font-size: 45px;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: rgb(251, 248, 248);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+  .search-input {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    line-height: 24px;  /*the height of 1 line of text*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 4px solid #420753;
+    border-radius: 24px;
+    font-size: larger;
+    background-color: #2d1a62;
+
+  }
+  
+  .filter-btn{
+   background-color:#86478b;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 0px;
+    font-size: 16px;
+    border-color:darkgray;
+    cursor:pointer;
+    margin: 15px;
+  }
+  .filter-btn:hover, .filter-btn:focus {
+    background-color:rgb(79, 82, 79);
+  }
+
+  #filterInput:focus {outline: 3px solid #ddd;}
+
+ 
+  .filter-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-fcontent {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+
+ 
+  .dropdown-fcontent a {
+    color: rgb(72, 23, 100);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-fcontent a:hover {background-color: #f1f1f1}
+
+  /* Style for sort button */
+.sort-btn {
+  background-color:#86478b;
+ /* color: white;*/
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  border-color:darkgray;
+  border-radius: 0px;
+  cursor: pointer;
+  margin: 15px;  
+
+}
+#sortInput:focus {outline: 3px solid #ddd;}
+/* Style for sort dropdown content */
+.dropdown-scontent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Show the sort dropdown content on hover */
+.sort-dropdown:hover .dropdown-scontent {
+  display: block;
+}
+
+/* Style for sort dropdown links */
+.dropdown-scontent a {
+  color: rgb(72, 23, 100);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style for sort dropdown links on hover */
+.dropdown-scontent a:hover {
+  background-color: #ddd;
+}
+
+
+  .show {display:block;}
+
+

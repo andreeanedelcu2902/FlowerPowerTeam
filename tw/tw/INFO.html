@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcVis Info</title>
+    <link rel="stylesheet" href="style_info.css">
+</head>
+<body>
+    <div class="header">
+      <img src="shine.PNG" alt="Imga" class="imga">
+    </div>
+    <div class="top">
+        <ul class="menu">
+          <li><a href="HOME.html" class="home">HOME</a></li>
+          <li><a href="INFO.html" class="info">INFO</a></li>
+          <li><a href="NEWS.html" class="news">NEWS</a></li>
+          <li><a href="HELP.html" class="help">HELP</a></li>
+        </ul>
+      </div>
+      <input class="search-input" type="text" placeholder="search"/>
+    </div>
+    <div class="filter-dropdown">
+        <button onclick="FilterFunction()" class="filter-btn">FILTER</button>
+        <div id="filterDropdown" class="dropdown-fcontent">
+          <a href="#Nomination_category">Nomination category</a>
+          <a href="#FilmTvShow">Film/TV Show</a>
+          <a href="#year">Year</a>
+        </div>
+    </div>
+    <script>
+        function FilterFunction() {
+  document.getElementById("filterDropdown").classList.toggle("show");
+  document.getElementById("filterInput").value = ""; // adaugati aceasta linie
+}
+
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("filterInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("filterDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+    </script>
+
+
+<div class="sort-dropdown">
+  <button onclick="SortFunction()" class="sort-btn">SORT BY</button>
+  <div id="sortDropdown" class="dropdown-scontent">
+    <a href="#Name">Name</a>
+    <a href="#Year">Year</a>
+  </div>
+</div>
+
+<script>
+function SortFunction() {
+  document.getElementById("sortDropdown").classList.toggle("show");
+  document.getElementById("filterInput").value = ""; // add this line
+}
+
+function sortFunction() {
+const actors = [
+  { name: "Tom Hanks", nominations: 4 },
+  { name: "Meryl Streep", nominations: 9 },
+  { name: "Brad Pitt", nominations: 2 },
+  { name: "Cate Blanchett", nominations: 6 }
+];
+
+function sortByNominations(a, b) {
+  return b.nominations - a.nominations;
+}
+actors.sort(sortByNominations);
+
+}
+</script>
+
+
+
+</body>
+</html>

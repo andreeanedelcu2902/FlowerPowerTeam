@@ -1,0 +1,167 @@
+*{
+    background-color: rgb(163, 156, 194);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.top {
+    
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(140, 132, 148, 0.4),rgba(243, 232, 194, 0.4));
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -10px;
+  box-shadow: 0px 2px 5px rgba(239, 234, 234, 0.1); 
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+}
+.imga{
+
+  color: rgb(251, 248, 248);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+.header{
+color: rgb(251, 248, 248);
+font-family: "Lucida Console", monospace;
+text-shadow: 2px 2px 0px #664685, 4px 4px 0px rgb(50, 8, 63);
+
+}
+
+.menu {
+    
+  list-style-type: none;
+  margin: 0 70px 0 100px;
+  padding: 0;
+  font-size: 45px;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: rgb(251, 248, 248);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider img {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.slider::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.slider::-webkit-scrollbar-track {
+    background: #E6E6E6;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background: #888;
+}
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px; /* schimbă valoarea aceasta la dimensiunea dorită */
+  margin: 0 auto;
+}
+
+  .gallery-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+  
+  .gallery-button a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #0d0e0d;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .gallery-button a:hover {
+    background-color: #888988;
+  }
+  .gallery-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+  .gallery-button3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+
+  .gallery-button4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+ 
+    .menu {
+    margin: 0;
+    font-size: 30px;
+    }
+    .gallery-button2, .gallery-button3, .gallery-button4 {
+    margin-left: 0;
+    margin-top: 10px;
+    }
+    }
+
+  
+  
+  

@@ -1,0 +1,158 @@
+*{
+    background-color: rgb(163, 156, 194);
+}
+.top {
+    
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(140, 132, 148, 0.4),rgba(243, 232, 194, 0.4));
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -10px;
+    box-shadow: 0px 2px 5px rgba(239, 234, 234, 0.1); 
+    font-family: "Lucida Handwriting", cursive;
+    font-weight: bold;
+}
+.imga{
+
+  color: rgb(251, 248, 248);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+.header{
+  color: rgb(251, 248, 248);
+  font-family: "Lucida Console", monospace;
+  text-shadow: 2px 2px 0px #664685, 4px 4px 0px rgb(50, 8, 63);
+}
+  
+.menu {
+    
+    list-style-type: none;
+    margin: 0 70px 0 100px;
+    padding: 0;
+    font-size: 45px;
+    overflow: hidden;
+  }
+  
+  .menu li {
+    float: left;
+  }
+  
+  .menu li a {
+    display: block;
+    color: rgb(251, 248, 248);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  .actori {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .linie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .linie img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .sag-awards-text {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 30px; /* schimbă valoarea la dimensiunea dorită */
+    text-align: justify; /* sau text-align: left pentru aliniere la stânga */
+    color: rgb(251, 248, 248);
+}
+.actor-details {
+    display: flex;
+    align-items: center;
+    color: rgb(251, 248, 248);
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.actor-image {
+    max-width: 200px; /* Ajustează dimensiunea imaginii după necesitate */
+    margin-right: 20px; /* Ajustează spațiul dintre imagine și text după necesitate */
+}
+
+.actor-info {
+   font-family: "Lucida Handwriting", cursive;
+    text-align: left; /* Aliniază textul la stânga */
+    color: rgb(251, 248, 248);
+}
+
+.actor-name {
+    font-size: 40px; /* Ajustează mărimea fontului după necesitate */
+    font-weight: bold;
+    color: rgb(251, 248, 248);
+    font-family: "Lucida Handwriting", cursive;
+    text-decoration: underline;
+}
+
+.actor-awards {
+    font-size: 30px; /* Ajustează mărimea fontului după necesitate */
+    color: rgb(251, 248, 248);
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.actor-awards-list {
+    margin-top: 5px; /* Ajustează spațiul dintre listă și textul anterior după necesitate */
+    font-size: 16px; /* Ajustează mărimea fontului după necesitate */
+    list-style-type: disc; /* Setează stilul listei după necesitate */
+    color: rgb(251, 248, 248);
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.actor-image {
+  width: 200px; /* Ajustează dimensiunea imaginii după necesitate */
+  margin-right: 20px; /* Ajustează spațiul dintre imagine și text după necesitate */
+}
+
+
+.scala-titlu{
+    font-size: 40px; /* Ajustează mărimea fontului după necesitate */
+    font-weight: bold;
+    color: rgb(251, 248, 248);
+    font-family: "Lucida Handwriting", cursive;
+    text-shadow: 5px 5px #511658;
+}
+.scala-img{
+    width: 600px;
+    margin:0 50px 0 360px ;
+    color: rgb(251, 248, 248);
+    font-family: "Lucida Handwriting", cursive;
+    text-shadow: 5px 5px #511658;
+}
+.titlu{
+    font-size: 40px; /* Ajustează mărimea fontului după necesitate */
+    font-weight: bold;
+    font-family: "Lucida Handwriting", cursive;
+    color: rgb(251, 248, 248);
+    font-family: "Lucida Handwriting", cursive;
+    text-shadow: 5px 5px #511658;
+    
+}
+
