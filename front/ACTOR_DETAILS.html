@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actor Details</title>
+  <link rel="stylesheet" href="styles/style_actordetails.css">
+</head>
+<body>
+  <div class="header">
+        <img src="styles/resources/BG.png" alt="Imga" class="imga">
+    </div>
+    <div class="top">
+        <ul class="menu">
+          <li><a href="HOME.html" class="home">HOME</a></li>
+          <li><a href="NEWS.html" class="news">NEWS</a></li>
+          <li><a href="HELP.html" class="help">HELP</a></li>
+          <li><a href="ACCOUNT.html" class="account">MY ACCOUNT</a></li>
+        </ul>
+    </div>
+
+  <div class="container">
+    <div class="actor-info-container">
+      <div class="actor-image"><img src="{{actorProfileImage}}" alt="{{actorName}}"></div>
+      <div class="actor-details">
+        <h2>{{actorName}}</h2>
+        <p>{{actorBiography}}</p>
+        <div class="known-for">
+          <h3>Known For:</h3>
+          <ul>
+            {{knownForMovies}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

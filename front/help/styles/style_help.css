@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("resources/bgd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  position: relative;
+  height: 370px; /* Înălțimea imaginii de fundal */
+}
+
+.header .imga {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(240, 190, 137, 0.4),rgba(239, 103, 173, 0.5));
+  padding: 10px;
+  border:3px solid rgb(188, 116, 9);
+  margin-top: 0px; /* Adjust the top margin here */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.menu li a:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.active {
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+  /* aplicam fontul */
+.help-container {
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 0px #664685;
+  color: #9a459c;
+}
+
+/* stilizam titlul */
+.help-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-family: "Lucida Console", monospace;
+text-shadow: 6px 3px 0px  #c62462;  
+color: white;
+
+}
+
+/* stilizam textul de ajutor */
+.help-text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Brush Script MT", cursive;
+  color: #c62462;
+}
+
+/* stilizam intrebarile din FAQ */
+.faq-question {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: "Brush Script MT", cursive;
+  text-shadow: 1px 1px 0px #664685;
+  color: #9a459c;
+
+}
+
+/* stilizam raspunsurile din FAQ */
+.faq-answer {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color:  #c62462;
+}
+
+.faq-title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: "Lucida Console", monospace;
+  /*text-shadow: 2px 2px 0px #664685, 4px 4px 0px rgb(50, 8, 63);*/
+  text-shadow: 1px 1px 0px #664685;
+  color: #9a459c;
+  text-decoration:underline;
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.about-button,
+.contact-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #c62462;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+.about-button:hover,
+.contact-button:hover {
+  cursor: pointer;
+  background-color: #9a459c;
+}
+
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  .menu {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .menu li {
+    display: inline-block;
+    float: none;
+  }
+  
+  
+  .help-title {
+    font-size: 2rem;
+  }
+  
+  .help-text {
+    font-size: 1.2rem;
+  }
+  
+  .faq-question {
+    font-size: 1.1rem;
+  }
+  
+  .faq-answer {
+    font-size: 1rem;
+  }
+  
+  .about-button,
+  .contact-button {
+    font-size: 16px;
+  }
+}
+
+
+.sign-up-button{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.signup-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a54587;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  background-color: #e0b9d3;
+}
+
+.signup-link:active {
+  background-color: #a54587;
+}
