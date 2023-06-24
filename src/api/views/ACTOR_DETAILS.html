@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actor Details</title>
+  <link rel="stylesheet" href="../static/styles/style_actordetails.css">
+</head>
+<body>
+  <div class="header">
+        <img src="../static/styles/resources/BG.png" alt="Imga" class="imga">
+    </div>
+    <div class="top">
+        <ul class="menu">
+          <li><a href="HOME.html" class="home">HOME</a></li>
+          <li><a href="../api/news.php" class="news">NEWS</a></li>
+          <li><a href="HELP.html" class="help">HELP</a></li>
+          <li><a href="../api/account.php" class="account">MY ACCOUNT</a></li>
+        </ul>
+    </div>
+
+  <div class="container">
+    <div class="actor-info-container">
+      <div class="actor-image"><img src="{{actorProfileImage}}" alt="{{actorName}}"></div>
+      <div class="actor-details">
+        <h2>{{actorName}}</h2>
+        <button class="favorite-button" onclick="addToFavorites()">❤️ Add to favorites</button>
+        <p>{{actorBiography}}</p>
+
+
+      
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+  function addToFavorites() {
+    
+    var actorId = {actorId};  
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '../api/add_to_favorites.php', true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var response = JSON.parse(xhr.responseText);
+        if (response.status === 'success') {
+          alert('Added to your favorites list!');
+        } else {
+          alert('Failed to add actor to favorites.');
+        }
+      }
+    };
+    xhr.send('actorId=' + actorId);
+  }
+</script>
+</body>
+</html>

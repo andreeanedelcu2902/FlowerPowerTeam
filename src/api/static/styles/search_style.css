@@ -1,0 +1,38 @@
+.result-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .result-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .result-item p {
+    margin-bottom: 5px;
+  }
+  
+  .result-item img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .result-item a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e91e63;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .result-item a:hover {
+    background-color: #ff4081;
+  }
+  .view-details {
+    color: #fff;
+  }
+
+  
